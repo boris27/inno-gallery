@@ -1,0 +1,8 @@
+<div class="values-container">
+    <div class="values">{{ currentUsage }} / {{ totalUsage }}</div>
+    <button (click)="addDiskSize()" class="add-disk-size">+</button>
+</div>
+<div class="progress">
+    <div [ngStyle]="{'width': percentUsage + '%'}" class="actual-progress"></div>
+    <div class="progress-track"></div>
+</div>
