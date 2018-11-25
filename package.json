@@ -46,6 +46,8 @@
     "karma-coverage": "^1.1.2",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
+    "ng-mocks": "^6.2.1",
+    "ts-mockito": "^2.2.5",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
   }

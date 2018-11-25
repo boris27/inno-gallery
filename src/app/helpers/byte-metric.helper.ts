@@ -10,7 +10,8 @@ export function byteMetricTransform(value: number): string {
     let calculateValue = value;
     let counter = 0;
 
-    while ((calculateValue /= 1024) > 1000) {
+    while (calculateValue > 1000) {
+        calculateValue /= 1024;
         counter++;
     }
 

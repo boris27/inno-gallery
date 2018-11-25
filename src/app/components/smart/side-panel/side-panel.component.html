@@ -1,10 +1,10 @@
 <div class="top-content">
     <div class="logo"></div>
     <nav>
-        <app-menu-link *ngFor="let link of links" [linkData]="link"></app-menu-link>
+        <app-menu-link *ngFor="let link of links$ | async" [linkData]="link"></app-menu-link>
     </nav>
 </div>
 <div class="bottom-content">
-    <app-disk-usage-progress [diskUsage]="diskUsage"></app-disk-usage-progress>
+    <app-disk-usage-progress [diskUsage]="diskUsage$ | async"></app-disk-usage-progress>
     <button (click)="upgradeAccount()" class="upgrade-account">Upgrade account</button>
 </div>

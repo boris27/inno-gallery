@@ -8,7 +8,11 @@
 .values-container
   display: flex
   justify-content: space-between
+  align-items: center
   margin: 10px
+
+  @media all and (max-width: 1200px)
+    flex-direction: column
 
   .add-disk-size
     margin-top: -3px
@@ -17,6 +21,9 @@
     border: 1px solid black
     color: #31a8d6
     cursor: pointer
+
+    @media all and (max-width: 1200px)
+      margin-top: 10px
 
 .progress
   position: relative

@@ -10,6 +10,7 @@ import { SidePanelComponent } from './smart/side-panel/side-panel.component';
 import { MenuLinkComponent } from './dumb/menu-link/menu-link.component';
 import { RouterModule} from '@angular/router';
 import { DiskUsageProgressComponent } from './dumb/disk-usage-progress/disk-usage-progress.component';
+import { ImageComponent } from './dumb/image/image.component';
 
 const COMPONENTS_LIST = [
     FilesComponent,
@@ -21,6 +22,7 @@ const COMPONENTS_LIST = [
     SidePanelComponent,
     MenuLinkComponent,
     DiskUsageProgressComponent,
+    ImageComponent,
 ];
 
 @NgModule({

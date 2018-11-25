@@ -1,5 +1,5 @@
 <a [routerLink]="linkUrl" class="link-container">
     <div [ngClass]="icon" class="icon"></div>
-    {{ linkText | titlecase }}
+    <span class="link-text">{{ linkText | titlecase }}</span>
     <span *ngIf="!!counter" class="events-counter">{{ counter }}</span>
 </a>

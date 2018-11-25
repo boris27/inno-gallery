@@ -1,3 +1,26 @@
-<p>
-  photos works!
-</p>
+<div class="search-string">
+    <input type="text" placeholder="Search..." />
+    <div class="user-info">Eddie Merphy</div>
+</div>
+<p>Photos</p>
+<div class="buttons-bar">
+    <div class="add-buttons">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <div class="filter-buttons">
+        <button (click)="filterByName()" class="filter">Name</button>
+        <button (click)="filterBySize()" class="filter">Size</button>
+        <button (click)="filterByModifiedDate()" class="filter">Modified</button>
+    </div>
+</div>
+<div *ngIf="images$ | async as images; else loading" class="images-container">
+    <app-image *ngFor="let image of images" [imageData]="image"></app-image>
+</div>
+
+<ng-template #loading>
+    <div>Loading...</div>
+</ng-template>
+
