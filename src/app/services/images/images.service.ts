@@ -10,7 +10,7 @@ export class ImagesService {
 
   constructor(private backendService: FakeBackendService) { }
 
-  public getImages(): Observable<ImageDataInterface[]> {
+  public getImages$(): Observable<ImageDataInterface[]> {
       return this.backendService.get$<ImageDataDto[]>(imagesMock);
   }
 }

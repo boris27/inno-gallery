@@ -21,7 +21,7 @@ export class PhotosComponent implements OnInit {
 
     ngOnInit() {
         this.images$ = combineLatest(
-            this.imagesService.getImages(),
+            this.imagesService.getImages$(),
             this.filterType$,
         ).pipe(
             map(([imagesArr, filterType]: [ImageDataInterface[], string]) => this.filterImages(imagesArr, filterType))
