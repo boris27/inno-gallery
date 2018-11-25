@@ -20,8 +20,8 @@ export class SidePanelComponent implements OnInit {
                 private diskUsageService: DiskUsageService) {}
 
     ngOnInit(): void {
-        this.links$ = this.linksService.getLinks();
-        this.diskUsage$ = this.diskUsageService.getDiskUsage();
+        this.links$ = this.linksService.getLinks$();
+        this.diskUsage$ = this.diskUsageService.getDiskUsage$();
     }
 
     public upgradeAccount(): void {

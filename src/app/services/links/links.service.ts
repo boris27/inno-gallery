@@ -10,7 +10,7 @@ export class LinksService {
 
   constructor(private backendService: FakeBackendService) { }
 
-  public getLinks(): Observable<LinkDataInterface[]> {
-      return this.backendService.get<LinkDataDto[]>(linksMock);
+  public getLinks$(): Observable<LinkDataInterface[]> {
+      return this.backendService.get$<LinkDataDto[]>(linksMock);
   }
 }

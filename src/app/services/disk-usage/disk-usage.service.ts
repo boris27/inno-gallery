@@ -10,7 +10,7 @@ export class DiskUsageService {
 
   constructor(private backendService: FakeBackendService) { }
 
-  public getDiskUsage(): Observable<DiskUsageInterface> {
-      return this.backendService.get<DiskUsageDto>(diskUsageMock);
+  public getDiskUsage$(): Observable<DiskUsageInterface> {
+      return this.backendService.get$<DiskUsageDto>(diskUsageMock);
   }
 }
